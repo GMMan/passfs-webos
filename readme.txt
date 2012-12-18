@@ -1,3 +1,12 @@
+passfs with webOS Customization
+-------------------------------
+
+This code implements a passthrough FUSE FS while supporting suspension and resuming so
+the base FS can be unmounted. This was created as part of an effort to strip CryptoFS
+from webOS.
+
+---------
+
 The purpose of this code is to be an example of the use of the FUSE system.
 FUSE allows filesystems to be written and run in user space as opposed to the Kernel.
 

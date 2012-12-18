@@ -1332,7 +1332,7 @@ static int userModeFS_setxattr(const char *path, const char *name, const char *v
 
 static struct fuse_operations userModeFS_oper = {
 	.init = userModeFS_init,
-	//.access	= userModeFS_access,
+	.access	= userModeFS_access,
 	.chmod	= userModeFS_chmod,
 	.chown	= userModeFS_chown,
 	.flush	= userModeFS_flush,
